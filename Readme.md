@@ -16,7 +16,7 @@ Apache Kafka is an open-source distributed event streaming platform designed for
 9. Offset: A unique identifier that tracks the position of a message within a partition
 
 ## Kafka architecture
-<img src="images/kafka-architecture.png" alt="Description" width="800" height="500">
+<img src="images/full-kafka-architecture.png" alt="Description" width="800" height="500">
 
 # Why Use Kafka?
 * High Throughput & Low Latency – Handles millions of messages per second.
