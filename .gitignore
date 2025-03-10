@@ -1,0 +1,12 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Folder-specific macOS files
+__MACOSX/
+
+# macOS Finder files
+.DS_Store?
+._*
+
