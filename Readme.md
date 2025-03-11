@@ -34,3 +34,10 @@ Apache Kafka is an open-source distributed event streaming platform designed for
 
 
 
+## The flow of Kafka is as follows,
+1. Start Zookeeper
+2. Start Kafka
+3. Create topic
+
+
+
