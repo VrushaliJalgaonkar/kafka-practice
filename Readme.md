@@ -35,9 +35,39 @@ Apache Kafka is an open-source distributed event streaming platform designed for
 
 
 ## The flow of Kafka is as follows,
-1. Start Zookeeper
-2. Start Kafka
+1. Start Zookeeper, default port = 2181
+2. Start Kafka, default port = 9092
 3. Create topic
+
+# Install Kafka using Docker
+1. Create [docker-compose.yml](/docker-compose.yml)
+2. Run docker compose to pull zookeeper and kafka images
+```bash
+> docker compose -f docker-compose.yml up -d
+```
+3. Check if services are pulled successfully
+```bash
+> docker images
+```
+**Expected Output:**
+```bash
+REPOSITORY               TAG       IMAGE ID       CREATED       SIZE
+wurstmeister/kafka       latest    db97697f6e28   2 years ago   457MB
+wurstmeister/zookeeper   latest    3f43f72cb283   6 years ago   510MB
+```
+```bash
+> docker ps
+```
+**Expected Output:**
+```bash
+CONTAINER ID   IMAGE                    COMMAND                  CREATED          STATUS          PORTS                                                NAMES
+8037f3fe330e   wurstmeister/kafka       "start-kafka.sh"         21 minutes ago   Up 20 minutes   0.0.0.0:9092->9092/tcp                               kafka
+cfdc17a3e7bd   wurstmeister/zookeeper   "/bin/sh -c '/usr/sb…"   21 minutes ago   Up 20 minutes   22/tcp, 2888/tcp, 3888/tcp, 0.0.0.0:2181->2181/tcp   zookeeper
+```
+4. Enter inside kafka container
+```bash
+> docker exec -it kafka /bin/sh
+```
 
 
 
