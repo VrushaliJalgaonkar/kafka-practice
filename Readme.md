@@ -114,7 +114,12 @@ kafka-console-consumer.sh --topic newtopic --from-beginning --bootstrap-server l
 ```
 
 ## Demo video
-[Video](images/kafka-exercise.mov)
+
+<a href="https://youtu.be/3rBnux1mjH4">
+  <img src="images/kafka-demo.png" width="800" height="500" />
+</a>
+
+
 
 
 
