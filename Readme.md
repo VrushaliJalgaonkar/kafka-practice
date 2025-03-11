@@ -43,11 +43,11 @@ Apache Kafka is an open-source distributed event streaming platform designed for
 1. Create [docker-compose.yml](/docker-compose.yml)
 2. Run docker compose to pull zookeeper and kafka images
 ```bash
-> docker compose -f docker-compose.yml up -d
+docker compose -f docker-compose.yml up -d
 ```
 3. Check if services are pulled successfully
 ```bash
-> docker images
+docker images
 ```
 **Expected Output:**
 ```bash
@@ -56,7 +56,7 @@ wurstmeister/kafka       latest    db97697f6e28   2 years ago   457MB
 wurstmeister/zookeeper   latest    3f43f72cb283   6 years ago   510MB
 ```
 ```bash
-> docker ps
+docker ps
 ```
 **Expected Output:**
 ```bash
@@ -66,7 +66,7 @@ cfdc17a3e7bd   wurstmeister/zookeeper   "/bin/sh -c '/usr/sb…"   21 minutes ag
 ```
 4. Enter inside kafka container
 ```bash
-> docker exec -it kafka /bin/sh
+docker exec -it kafka /bin/sh
 ```
 
 
